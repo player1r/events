@@ -1,0 +1,156 @@
+.event_page_area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    $margin_bottom: 50px;
+
+    .name_button_image {
+        width: $content_width;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        $width_item: 49%;
+        margin-bottom: $margin_bottom;
+
+        .name_and_button {
+            width: $width_item;
+            display: flex;
+            flex-direction: column;
+            //justify-content: space-between;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .place_and_date {                
+                margin-top: 30px;
+
+                .info {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                    font-family: "Open Sans";
+    
+                    .place {
+                        vertical-align: middle;
+                        display: inline-block;
+                        margin-right: 10px;
+                        width: 25px;
+                        height: 25px;
+                        background-image: url(../assets/images/place.svg);
+                        background-size: cover;
+                        //background-position: left;
+                    }
+        
+                    .date {
+                        margin-left: 2px;
+                        vertical-align: middle;
+                        display: inline-block;
+                        margin-right: 12px;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(../assets/images/time.svg);
+                        background-size: cover;
+                    }                    
+                }                
+            }
+
+            form {
+                button {
+                    margin-top: 30px;
+                    padding: 25px 80px;
+                    background-color: #7B68EE;
+                    color: white;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    font-size: 16px;
+            
+                    &:hover {        
+                        border: 2px solid #7B68EE;
+                        padding: 23px 78px;
+                        color: #7B68EE;
+                        background-color: white;    
+                    }
+
+                    &:disabled {
+                        cursor: default;
+                        border: 2px solid #6495ED;
+                        padding: 23px 78px;
+                        color: #6495ED;
+                        background-color: white;
+
+                    }
+                }
+            }
+        }
+
+        .image {
+            width: $width_item;
+            min-height: 400px;
+            background-position: center;
+            background-size: cover;
+
+        }
+    }
+
+    .about {
+        width: $content_width;
+        margin-bottom: $margin_bottom;
+
+        h1 {            
+            font-size: 38px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+    }
+
+    .contacts {
+        margin-bottom: $margin_bottom;
+        width: $content_width;
+        display: flex;
+        flex-direction: column;
+
+        h1 {            
+            font-size: 38px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .address_organizer {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-size: 20px;
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .item {
+                max-width: 30%;
+                margin-right: 5%;
+            }
+        }
+
+        .map {
+            width: 100%;
+            border: 1px solid black;
+        }
+    }
+}

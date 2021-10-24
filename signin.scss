@@ -1,0 +1,90 @@
+.form_area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+
+    $width: 36%;
+
+    .form_block {
+        width: $content_width;
+        margin-bottom: 150px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        p {
+            width: $width;
+            margin-top: 15px;
+            text-align: center;
+            a {
+                color: #7B68EE;
+                &:hover {
+                    transition: .3s;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        form {
+            width: $width;
+
+            input[type='text'], input[type='password'], input[type='date'], input[type='email'], input[type='number'],select {
+                padding: 15px;
+                font-size: 22px;
+                border: 2px solid gray;
+                width: 100%;
+                margin-bottom: 15px;
+    
+                &:hover {
+                    border-color: #7B68EE;
+                }
+    
+                &:focus {
+                    border-color: #7B68EE;
+                }
+    
+                &:active {
+                    border-color: #7B68EE;
+                }
+            }
+
+            input[type='checkbox'], input[type='radio'] {
+                -webkit-appearance: checkbox;
+            }
+
+            input[type='radio'] {                
+                font-size: 22px;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+    
+            button {
+                background-color: #7B68EE;
+                color: white;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 500;
+                letter-spacing: 1px;
+                font-size: 22px;
+                width: 100%;
+                padding: 15px 0 15px 0;
+                text-align: center;
+                border: 2px solid #7B68EE;
+        
+                &:hover {        
+                    border: 2px solid #7B68EE;
+                    padding: 15px 0 15px 0;
+                    color: #7B68EE;
+                    background-color: white;    
+                }
+            }
+        }
+
+        
+    }
+}
